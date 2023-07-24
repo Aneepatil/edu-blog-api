@@ -23,6 +23,19 @@ app.use(cors());
 // app.use(isAdmin)
 
 // Define routes
+// Home Route
+app.get('/', async(req,res)=>{
+  try {
+      const posts = await Post.find()
+
+      res.json({
+        status:"Success",
+        data:posts
+      })
+  } catch (error) {
+    res.json(error.message)
+  }
+})
 app.use("/api/v1/users", userRoute);
 app.use("/api/v1/posts", postRoute);
 app.use("/api/v1/comments", commentRoute);
