@@ -9,6 +9,7 @@ import commentRoute from "./routes/comments/commentRoute.js";
 import categoryRoute from "./routes/categories/categoryRoute.js";
 import { globleErrorHandler } from "./middlewares/globleErrorHandler.js";
 import { isAdmin } from "./middlewares/isAdmin.js";
+import Post from "./models/PostMod/PostModel.js";
 
 dotenv.config();
 
