@@ -2,7 +2,7 @@
 
 ## Tech Stack
 
-__server:__Node.js, MongoDB,Mongoose, Express.js, JWT
+__server:__ Node.js, MongoDB,Mongoose, Express.js, JWT
 
 # API FEATURES
 
